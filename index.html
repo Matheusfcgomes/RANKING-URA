@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro URA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets\favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="cronometro-container">
+        <div class="cronometro-left">
+            <button id="newPlayer-button">NOVO JOGADOR</button>
+        </div>
+
+        <div class="cronometro-center">
+            <img src="/assets/logo.svg" alt="Logo URA" class="URA-logo">
+            <h1 class="cronometro-title">CRONÔMETRO</h1>
+            <div class="timer">
+                <span id="minutos">00</span>:<span id="segundos">00</span>
+            </div>
+            <div class="timer-control">
+                <button id="timerStartStop-button">INICIAR</button>
+                <button id="timerReset-button">ZERAR</button>
+                <button id="timerSend-button">ENVIAR</button>
+            </div>
+            <h2 class="recorde-text">RECORDE:</h2>
+            <div class="recorde-time">
+                <span id="recorde-minutos">00</span>:<span id="recorde-segundos">00</span>
+            </div>
+            <h3 id="current-player">JOGADOR ATUAL</h3>
+        </div>
+
+        <div class="cronometro-right">
+            <button id="ranking-button">RANKING</button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
