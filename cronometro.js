@@ -61,3 +61,33 @@ zerar_button.addEventListener('click', () => {
     segundos_text.innerHTML = '0' + segundos;
     minutos_text.innerHTML = '0' + segundos;
 })
+
+// SALVAR CREDENCIAIS DO JOGADOR
+
+var nome;
+var email;
+var telefone;
+
+const cadastrar_button = document.getElementById('cadastro-button');
+cadastrar_button.addEventListener('click', () => {
+    nome = document.getElementById('participante').value;
+    email = document.getElementById('email').value;
+    telefone = document.getElementById('telefone').value;
+    document.getElementById('current-player').innerHTML = nome;
+})
+
+// ENVIANDO PARA O DATABASE
+
+const enviar_button = document.getElementById('timerSend-button');
+enviar_button.addEventListener('click', () => {
+    const dados = {
+        nome: nome,
+        email: email,
+        telefone: telefone,
+        tempo_total: total_time,
+        minutos: minutos,
+        segundos: segundos
+    };
+
+    console.log(dados);
+})
