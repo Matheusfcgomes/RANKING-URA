@@ -47,46 +47,47 @@ body {
 }
 .header{
     background: #5a92c2;
-    padding: 24px;
+    padding: 28px;
     width: 40vw;
     text-align: center;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     font-size: 140%;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .form-content{
     font-size: 160%;
     padding: 16px;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 9px;
     padding-bottom: 12px;
     position: relative;
 }
 .form-content label{
     display: inline-block;
-    margin-bottom: 5px;
 }
 .form-content input{
     display: block;
     font-size: 75%;
-    width: 170%;
+    width: 130%;
     border-radius: 8px;
     padding: 8px;
     border: 2px solid #dfdfdf
 }
-.form-content button{
-    width: 60%;
-    height: 100%;
-    padding: 14px;
-    background-color: #fff;
+#cadastro-button{
+    width: 90%;
+    height: 80%;
+    background-color: #ffffff;
     color: #5a92c2;
     border: none;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px #467095;
     font-weight: bolder;
     font-size: large;
-    box-shadow: 2px 2px 10px black;
+    margin-left: 2vw;
+    margin-bottom: 47px;
 }
 .cronometro-box {
     background-color: #5a92c2;
