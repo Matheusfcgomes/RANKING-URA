@@ -1,6 +1,6 @@
 // CARREGANDO NOVAS PAGES
 
-const ranking_button = document.getElementById('ranking-button')
+const ranking_button = document.getElementById('ranking-button');
 ranking_button.addEventListener('click', () => {
     window.location.href = 'ranking.html';
 })

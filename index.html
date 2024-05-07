@@ -14,24 +14,30 @@
     <div class="cronometro-container">
         <div class="cadastro-box">
             <section class="header">
-                <h2>Novo Participante</h2>
+                <h2>PARTICIPANTE</h2>
             </section>
             <form id="form" class="form">
                 <div class="form-content">
-                    <img src="/assets/user-solid.svg" alt="user-iconss" class="icons">
-                    <label for="participante" id="label_01">Nome do participante:</label>
-                    <input type="text" id="participante" placeholder="Digite o nome do novo participante..."/>
+                    <label for="participante" class="cadastro-label">Nome</label>
+                    <div class="input-box">
+                        <img src="/assets/user-solid.svg" alt="user-icon" class="icons">
+                        <input type="text" id="participante"/>
+                    </div>
                 </div>
                 <div class="form-content">
-                    <img src="/assets/envelope-solid.svg" alt="user-icons" class="icons">
-                    <label for="email">Email:</label>
-                    <input type="text" id="email" placeholder="Digite o email do novo participante..."/>
+                    <label for="email" class="cadastro-label">Email</label>
+                    <div class="input-box">
+                        <img src="/assets/envelope-solid.svg" alt="user-icon" class="icons">
+                        <input type="text" id="email"/>
+                    </div>
                 </div>
 
                 <div class="form-content">
-                    <img src="/assets/phone-solid.svg" alt="user-icon" class="icons">
-                    <label for="telefone">Telefone:</label>
-                    <input type="text" id="telefone" placeholder="Digite o telefone do novo participante..."/>
+                    <label for="telefone" class="cadastro-label">Telefone</label>
+                    <div class="input-box">
+                        <img src="/assets/phone-solid.svg" alt="user-icon" class="icons">
+                        <input type="text" id="telefone"/>
+                    </div>
                 </div>
             </form>
             <div class="form-button">
@@ -59,5 +65,5 @@
         </div>
     </div>
 </body>
-<script src="main.js"></script>
+<script src="cronometro.js"></script>
 </html>

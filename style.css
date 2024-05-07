@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fff;
+    background: linear-gradient(#fff, #5a92c2);
 }
 
 .header-logo {
@@ -22,7 +22,7 @@ body {
 }
 
 .cronometro-container {
-    height: 70vh;
+    height: 81vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ body {
     background-color: #ffffff;
     display:flex;
     flex-direction: column;
-    align-items:last baseline;
+    align-items:center;
     justify-content: center;
     height: 70vh;
     width: 40vw;
@@ -42,55 +42,69 @@ body {
     margin-right: 5vw;
 }
 .icons{
-    height: 3vh;
-    width: 3vw; 
+    height: 4vh;
+    width: 4vw; 
+    margin-left: -8px;
+    margin-bottom: 4px;
 }
 .header{
-    background: #5a92c2;
-    padding: 28px;
-    width: 40vw;
-    text-align: center;
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    font-size: 140%;
-    margin-bottom: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    margin-bottom: 30px;
+    width: 17vw;
+    border-bottom: solid 4px #5a92c2;
 }
 
 .form-content{
-    font-size: 160%;
-    padding: 16px;
-    margin-top: 4px;
-    margin-bottom: 9px;
-    padding-bottom: 12px;
-    position: relative;
+    font-size: larger;
+    color: #867f7f;
 }
-.form-content label{
-    display: inline-block;
-}
+
 .form-content input{
-    display: block;
-    font-size: 75%;
-    width: 130%;
-    border-radius: 8px;
-    padding: 8px;
-    border: 2px solid #dfdfdf
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: large;
 }
+
+.form-content input:focus {
+    outline: none;
+}
+
+.input-box {
+    width: 25vw;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    display: flex;
+    font-size: x-large;
+    border-bottom: solid 2px black;
+}
+
 #cadastro-button{
-    width: 90%;
+    width: 20vw;
     height: 80%;
-    background-color: #ffffff;
-    color: #5a92c2;
+    background-color: #5a92c2;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
-    box-shadow: 5px 5px 20px #467095;
+    box-shadow: 2px 2px 10px #467095;
     font-weight: bolder;
     font-size: large;
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-bottom: 47px;
+    transition: 0.5s;
 }
+
+#cadastro-button:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #5a92c2;
+}
+
 .cronometro-box {
-    background-color: #5a92c2;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,13 +131,20 @@ body {
 #timerStartStop-button, #timerReset-button, #timerSend-button {
     width: 30%;
     height: 100%;
-    background-color: #fff;
-    color: #5a92c2;
+    background-color: #5a92c2;
+    color: #ffffff;
     border: none;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: large;
-    box-shadow: 2px 2px 10px black;
+    font-size: medium;
+    box-shadow: 2px 2px 10px #467095;
+    transition: 0.5s;
+}
+
+#timerStartStop-button:hover, #timerReset-button:hover, #timerSend-button:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #5a92c2;
 }
 
 .recorde-text {
@@ -141,21 +162,26 @@ body {
 #ranking-button {
     height: 10%;
     width: 20%;
-    background-color: #fff;
-    color: #5a92c2;
+    background-color: #5a92c2;
+    color: #fff;
     border: none;
     border-radius: 10px;
     font-weight: bolder;
-    font-size: large;
+    font-size: medium;
     margin-top: 3%;
-    box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px #467095;
+    transition: 0.5s;
+}
+
+#ranking-button:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    color: #5a92c2;
 }
 
 /*AQUI ENTRA O CSS DA PÁGINA DO RANKING*/
 .rank{
     display: flex;
-    background-color: #73a9d8;
-    height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -244,13 +270,14 @@ body {
     display: flex;
     flex-direction:row;
     align-items:flex-start;
-    justify-content: center;
-    height: 75vh;
-    width: 30vw;
+    justify-content: space-between;
+
+    width: 80vw;
     box-shadow: 5px 5px 20px black;
     border-radius: 10px;
     margin-bottom: 8px;
 }
+
 .divisor{
     height: 0.2vh;
     width: 6vw;
@@ -269,15 +296,28 @@ body {
     margin-right: 20px;
 }
 
+.posicao_ranking, .nome_ranking, .telefone_ranking, .email_ranking, .tempo_ranking {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
 #inicio-button{
     margin-bottom: 15px;
     margin-top: 13px;
     height: 7vh;
-    width: 8vw;
+    width: 10vw;
     background-color: #fff;
     color: #5a92c2;
     border: none;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 2px 2px 10px #467095;
     border-radius: 8px;
     font-size: medium;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+#inicio-button:hover {
+    background-color: #5a92c2;
+    color: #fff;
+    transition: 0.5s;
 }
