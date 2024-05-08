@@ -23,6 +23,16 @@ fetch('http://localhost:3000/ranking').then(function (response) {
         segundos: participante.segundos,
     }));
 
+    // FORMATANDO MINUTOS E SEGUNDOS NO MODELO 00:00
+    for(let i=0; i<participantes.length; i++){
+        if(participantes[i].minutos < 10){
+            participantes[i].minutos = '0' + participantes[i].minutos
+        }
+        if(participantes[i].segundos < 10){
+            participantes[i].segundos = '0' + participantes[i].segundos
+        }
+    }
+
     // ORDENANDO POR TEMPO
     participantes.sort((a, b) => a.tempo_total - b.tempo_total)
 

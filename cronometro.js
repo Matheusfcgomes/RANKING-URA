@@ -80,6 +80,10 @@ cadastrar_button.addEventListener('click', () => {
 
 const enviar_button = document.getElementById('timerSend-button');
 enviar_button.addEventListener('click', () => {
+    
+    minutos = Number(minutos);
+    segundos = Number(segundos);
+    
     const dados = {
         nome: nome,
         email: email,
