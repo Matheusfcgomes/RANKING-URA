@@ -62,32 +62,18 @@ zerar_button.addEventListener('click', () => {
     minutos_text.innerHTML = '0' + segundos;
 })
 
-// SALVAR CREDENCIAIS DO JOGADOR
-
-var nome;
-var email;
-var telefone;
+// ENVIANDO INFORMAÇÕES DO JOGADOR
 
 const cadastrar_button = document.getElementById('cadastro-button');
 cadastrar_button.addEventListener('click', () => {
-    nome = document.getElementById('participante').value;
-    email = document.getElementById('email').value;
-    telefone = document.getElementById('telefone').value;
-    document.getElementById('current-player').innerHTML = nome;
-})
-
-// ENVIANDO PARA O DATABASE
-
-const enviar_button = document.getElementById('timerSend-button');
-enviar_button.addEventListener('click', () => {
     
     minutos = Number(minutos);
     segundos = Number(segundos);
     
     const dados = {
-        nome: nome,
-        email: email,
-        telefone: telefone,
+        nome: document.getElementById('participante').value,
+        email: document.getElementById('email').value,
+        telefone: document.getElementById('telefone').value,
         tempo_total: total_time,
         minutos: minutos,
         segundos: segundos
