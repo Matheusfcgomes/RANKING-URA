@@ -89,8 +89,6 @@ enviar_button.addEventListener('click', () => {
         segundos: segundos
     };
 
-    console.log(dados);
-
     fetch('http://localhost:3000/ranking', {
         method: 'POST',
         headers: {
@@ -98,4 +96,5 @@ enviar_button.addEventListener('click', () => {
         },
         body: JSON.stringify(dados)
     })
+    location.reload();
 })
